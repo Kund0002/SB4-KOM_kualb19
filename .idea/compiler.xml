@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Bullet" />
+        <module name="Player" />
+        <module name="Asteroids" />
         <module name="Enemy" />
         <module name="AsteroidsLibGDX" />
         <module name="Core" />
-        <module name="Player" />
         <module name="Common" />
-        <module name="Bullet" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

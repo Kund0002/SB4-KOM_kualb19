@@ -18,6 +18,8 @@ import dk.sdu.mmmi.cbse.playersystem.PlayerControlSystem;
 import dk.sdu.mmmi.cbse.playersystem.PlayerPlugin;
 import dk.sdu.mmmi.cbse.enemysystem.EnemyControlSystem;
 import dk.sdu.mmmi.cbse.enemysystem.EnemyPlugin;
+import dk.sdu.mmmi.cbse.asteroidssystem.AsteroidsControlSystem;
+import dk.sdu.mmmi.cbse.asteroidssystem.AsteroidsPlugin;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,20 +51,30 @@ public class Game
                 new GameInputProcessor(gameData)
         );
 
+        //player
         IGamePluginService playerPlugin = new PlayerPlugin();
         IEntityProcessingService playerProcess = new PlayerControlSystem();
         entityPlugins.add(playerPlugin);
         entityProcessors.add(playerProcess);
 
+        //Enemy
         IGamePluginService enemyPlugin = new EnemyPlugin();
         IEntityProcessingService enemyProcess = new EnemyControlSystem();
         entityPlugins.add(enemyPlugin);
         entityProcessors.add(enemyProcess);
 
+        //Bullet
         IGamePluginService bulletPlugin = new BulletPlugin();
         IEntityProcessingService bulletProcess = new BulletControlSystem();
         entityPlugins.add(bulletPlugin);
         entityProcessors.add(bulletProcess);
+
+        //Asteroids
+        IGamePluginService asteroidsPlugin = new AsteroidsPlugin();
+        IEntityProcessingService asteroidsProcess = new AsteroidsControlSystem();
+        entityPlugins.add(asteroidsPlugin);
+        entityProcessors.add(asteroidsProcess);
+
         // Lookup all Game Plugins using ServiceLoader
         for (IGamePluginService iGamePlugin : entityPlugins) {
             iGamePlugin.start(gameData, world);
