@@ -7,10 +7,11 @@ import dk.sdu.mmmi.cbse.common.data.entityparts.LifePart;
 import dk.sdu.mmmi.cbse.common.data.entityparts.MovingPart;
 import dk.sdu.mmmi.cbse.common.data.entityparts.PositionPart;
 import dk.sdu.mmmi.cbse.common.services.IEntityProcessingService;
-//import dk.sdu.mmmi.cbse.commonBullet.Bullet;
-//import dk.sdu.mmmi.cbse.commonBullet.BulletSPI;
+import dk.sdu.mmmi.cbse.commonbullet.BulletSPI;
+import dk.sdu.mmmi.cbse.commonbullet.Bullet;
 
-public class BulletControlSystem implements IEntityProcessingService /**BulletSPI**/ {
+
+public class BulletControlSystem implements IEntityProcessingService, BulletSPI {
 
     @Override
     public void process(GameData gameData, World world) {

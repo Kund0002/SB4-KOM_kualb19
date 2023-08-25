@@ -9,12 +9,15 @@
         <module name="Bullet" />
         <module name="CollisionDetection" />
         <module name="Player" />
+        <module name="CommonEnemy" />
         <module name="Asteroids" />
         <module name="Enemy" />
-        <module name="commonEnemy" />
+        <module name="CommonAsteroids" />
         <module name="AsteroidsLibGDX" />
+        <module name="CommonBullet" />
         <module name="Core" />
         <module name="Common" />
+        <module name="CommonPlayer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -42,13 +45,10 @@
       <module name="common (2)" target="9" />
       <module name="Common (3)" target="1.5" />
       <module name="Common (4)" target="9" />
-      <module name="CommonAsteroids" target="1.5" />
       <module name="CommonAsteroids (1)" target="1.5" />
       <module name="CommonAsteroids (2)" target="9" />
-      <module name="CommonBullet" target="1.5" />
       <module name="CommonBullet (1)" target="1.5" />
       <module name="CommonBullet (2)" target="9" />
-      <module name="CommonEnemy" target="1.5" />
       <module name="CommonEnemy (1)" target="1.5" />
       <module name="CommonEnemy (2)" target="9" />
       <module name="compiled-bundle-settings" target="1.8" />

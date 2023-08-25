@@ -13,7 +13,10 @@
         <module>Bullet</module>
         <module>Asteroids</module>
         <module>CollisionDetection</module>
-        <module>commonEnemy</module>
+        <module>CommonEnemy</module>
+        <module>CommonBullet</module>
+        <module>CommonAsteroids</module>
+        <module>CommonPlayer</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

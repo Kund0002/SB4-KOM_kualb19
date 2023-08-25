@@ -9,14 +9,20 @@
     <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/CollisionDetection/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/Common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/Common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/CommonAsteroids/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/CommonAsteroids/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/CommonBullet/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/CommonBullet/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/CommonEnemy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/CommonEnemy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/CommonPlayer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/CommonPlayer/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/Core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/Core/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/Enemy/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/Enemy/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/Player/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/Player/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/commonEnemy/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/commonEnemy/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/AsteroidsJava9/Asteroid/src/main/java" charset="UTF-8" />

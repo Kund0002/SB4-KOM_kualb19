@@ -7,8 +7,7 @@ import dk.sdu.mmmi.cbse.common.data.entityparts.LifePart;
 import dk.sdu.mmmi.cbse.common.data.entityparts.MovingPart;
 import dk.sdu.mmmi.cbse.common.data.entityparts.PositionPart;
 import dk.sdu.mmmi.cbse.common.services.IEntityProcessingService;
-
-//import dk.sdu.mmmi.cbse.commonAsteroids.Asteroid;
+import dk.sdu.mmmi.cbse.commonasteroids.Asteroids;
 
 import java.util.Random;
 

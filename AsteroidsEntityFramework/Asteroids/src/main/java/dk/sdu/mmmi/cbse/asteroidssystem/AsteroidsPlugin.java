@@ -7,28 +7,28 @@ import dk.sdu.mmmi.cbse.common.data.entityparts.LifePart;
 import dk.sdu.mmmi.cbse.common.data.entityparts.MovingPart;
 import dk.sdu.mmmi.cbse.common.data.entityparts.PositionPart;
 import dk.sdu.mmmi.cbse.common.services.IGamePluginService;
-//import dk.sdu.mmmi.cbse.commonAsteroids.Asteroid;
+import dk.sdu.mmmi.cbse.commonasteroids.Asteroids;
 
 import java.util.Random;
 
 public class AsteroidsPlugin implements IGamePluginService {
-    /*private Entity asteroid;
+    private Entity asteroids;
 
-    public AsteroidPlugin() {
-    }*/
+    public AsteroidsPlugin() {
+    }
 
     @Override
     public void start(GameData gameData, World world) {
         Random rand = new Random();
         int random = rand.nextInt(4);
 
-        Entity asteroid = createAsteroid(gameData,20);
-        world.addEntity(asteroid);
+        asteroids = createAsteroid(gameData,20);
+        world.addEntity(asteroids);
 
         for (int i = 0; i < random; i++) {
             // Add entities to the world
-            asteroid = createAsteroid(gameData,20);
-            world.addEntity(asteroid);
+            asteroids = createAsteroid(gameData,20);
+            world.addEntity(asteroids);
         }
 
     }

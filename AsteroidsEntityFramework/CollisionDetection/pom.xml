@@ -26,24 +26,6 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>dk.sdu.mmmi.cbse</groupId>
-            <artifactId>Enemy</artifactId>
-            <version>1.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>dk.sdu.mmmi.cbse.commonEnemy</groupId>
-            <artifactId>Asteroids</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>dk.sdu.mmmi.cbse</groupId>
-            <artifactId>Player</artifactId>
-            <version>1.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
             <groupId>dk.sdu.mmmi.cbse.commonEnemy</groupId>
             <artifactId>Bullet</artifactId>
             <version>1.0-SNAPSHOT</version>
@@ -51,7 +33,19 @@
         </dependency>
         <dependency>
             <groupId>dk.sdu.mmmi.cbse.commonEnemy</groupId>
-            <artifactId>commonEnemy</artifactId>
+            <artifactId>CommonEnemy</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>dk.sdu.mmmi.cbse.commonEnemy</groupId>
+            <artifactId>CommonPlayer</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>dk.sdu.mmmi.cbse.commonEnemy</groupId>
+            <artifactId>CommonAsteroids</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>

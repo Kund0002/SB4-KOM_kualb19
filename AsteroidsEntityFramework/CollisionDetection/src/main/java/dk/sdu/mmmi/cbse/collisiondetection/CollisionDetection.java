@@ -1,7 +1,7 @@
 package dk.sdu.mmmi.cbse.collisiondetection;
 
-import dk.sdu.mmmi.cbse.asteroidssystem.Asteroids;
-import dk.sdu.mmmi.cbse.bulletsystem.Bullet;
+import dk.sdu.mmmi.cbse.commonasteroids.Asteroids;
+import dk.sdu.mmmi.cbse.commonbullet.Bullet;
 import dk.sdu.mmmi.cbse.common.data.Entity;
 import dk.sdu.mmmi.cbse.common.data.GameData;
 import dk.sdu.mmmi.cbse.common.data.World;
@@ -9,8 +9,7 @@ import dk.sdu.mmmi.cbse.common.data.entityparts.LifePart;
 import dk.sdu.mmmi.cbse.common.data.entityparts.PositionPart;
 import dk.sdu.mmmi.cbse.common.services.IPostEntityProcessingService;
 import dk.sdu.mmmi.cbse.commonenemy.Enemy;
-import dk.sdu.mmmi.cbse.playersystem.Player;
-import dk.sdu.mmmi.cbse.asteroidssystem.AsteroidsPlugin;
+import dk.sdu.mmmi.cbse.commonplayer.Player;
 
 import java.util.List;
 
@@ -65,11 +64,6 @@ public class CollisionDetection implements IPostEntityProcessingService {
         PositionPart EntB = b.getPart(PositionPart.class);
         float distance = (float) Math.sqrt(Math.pow(EntA.getX() - EntB.getX(), 2) + Math.pow(EntA.getY() - EntB.getY(), 2));
         return distance <= (EntA.getRadians() + EntB.getRadians());
-    }
-
-    private void split(Asteroids asteroids, AsteroidsPlugin asteroidsPlugin, GameData gameData, World world) {
-        // Implement this to create two smaller asteroids from a larger one
-        asteroidsPlugin.createSplitAsteroid(asteroids, gameData, world);
     }
 
     private void hit(Entity entity) {
