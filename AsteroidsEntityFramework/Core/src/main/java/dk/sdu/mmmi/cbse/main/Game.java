@@ -18,7 +18,6 @@ import dk.sdu.mmmi.cbse.playersystem.PlayerPlugin;
 import dk.sdu.mmmi.cbse.enemysystem.EnemyControlSystem;
 import dk.sdu.mmmi.cbse.enemysystem.EnemyPlugin;
 import dk.sdu.mmmi.cbse.bulletsystem.BulletControlSystem;
-import dk.sdu.mmmi.cbse.bulletsystem.BulletPlugin;
 import dk.sdu.mmmi.cbse.asteroidssystem.AsteroidsControlSystem;
 import dk.sdu.mmmi.cbse.asteroidssystem.AsteroidsPlugin;
 import dk.sdu.mmmi.cbse.collisiondetection.CollisionDetection;
@@ -77,6 +76,7 @@ public class Game
         entityPlugins.add(asteroidsPlugin);
         entityProcessors.add(asteroidsProcess);
 
+        //Collision detection
         IPostEntityProcessingService collisionDetection = new CollisionDetection();
         postEntityProcessors.add(collisionDetection);
 
