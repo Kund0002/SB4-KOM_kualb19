@@ -3,7 +3,7 @@ package dk.sdu.mmmi.cbse.bulletsystem;
 import dk.sdu.mmmi.cbse.common.data.Entity;
 import dk.sdu.mmmi.cbse.common.data.GameData;
 import dk.sdu.mmmi.cbse.common.data.World;
-//import dk.sdu.mmmi.cbse.common.data.entityparts.LifePart;
+import dk.sdu.mmmi.cbse.common.data.entityparts.LifePart;
 import dk.sdu.mmmi.cbse.common.data.entityparts.MovingPart;
 import dk.sdu.mmmi.cbse.common.data.entityparts.PositionPart;
 import dk.sdu.mmmi.cbse.common.services.IEntityProcessingService;
@@ -18,18 +18,18 @@ public class BulletControlSystem implements IEntityProcessingService /**BulletSP
         for (Entity bullet : world.getEntities(Bullet.class)) {
             PositionPart positionPart = bullet.getPart(PositionPart.class);
             MovingPart movingPart = bullet.getPart(MovingPart.class);
-            //LifePart lifePart = bullet.getPart(LifePart.class);
-            //lifePart.reduceExpiration(gameData.getDelta());
+            LifePart lifePart = bullet.getPart(LifePart.class);
+            lifePart.reduceExpiration(gameData.getDelta());
 
             movingPart.setUp(true);
 
-            /**if (lifePart.getExpiration() <= 0 ) {
+            if (lifePart.getExpiration() <= 0 ) {
                 world.removeEntity(bullet);
-            }**/
+            }
 
             movingPart.process(gameData, bullet);
             positionPart.process(gameData, bullet);
-            //lifePart.process(gameData, bullet);
+            lifePart.process(gameData, bullet);
 
             updateShape(bullet);
         }
@@ -48,7 +48,7 @@ public class BulletControlSystem implements IEntityProcessingService /**BulletSP
         Entity bullet = new Bullet();
         bullet.add(new MovingPart(deacceleration, acceleration, maxSpeed, rotationSpeed));
         bullet.add(new PositionPart(x, y, radians));
-        //bullet.add(new LifePart(1,1));
+        bullet.add(new LifePart(1,1));
 
 
         return bullet;

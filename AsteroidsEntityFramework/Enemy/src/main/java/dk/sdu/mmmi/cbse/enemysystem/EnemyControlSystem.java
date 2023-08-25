@@ -7,7 +7,7 @@ import dk.sdu.mmmi.cbse.common.data.entityparts.LifePart;
 import dk.sdu.mmmi.cbse.common.data.entityparts.MovingPart;
 import dk.sdu.mmmi.cbse.common.data.entityparts.PositionPart;
 import dk.sdu.mmmi.cbse.common.services.IEntityProcessingService;
-import dk.sdu.mmmi.cbse.bullet.BulletControlSystem;
+import dk.sdu.mmmi.cbse.bulletsystem.BulletControlSystem;
 //import dk.sdu.mmmi.cbse.commonEnemy.Enemy;
 
 import java.util.Random;
@@ -45,8 +45,11 @@ public class EnemyControlSystem implements IEntityProcessingService {
             positionPart.process(gameData, enemy);
             lifePart.process(gameData, enemy);
 
-            if(lifePart.getLife() <= lifePart.getExpiration()){
+            if(lifePart.isIsHit() && lifePart.getLife() <= 1){
                 world.removeEntity(enemy);
+            } else {
+                lifePart.setLife(lifePart.getLife() - 1);
+                lifePart.setIsHit(false);
             }
 
             updateShape(enemy);
