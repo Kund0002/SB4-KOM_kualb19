@@ -7,12 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Bullet" />
-        <module name="CollisionDetection" />
-        <module name="Player" />
         <module name="CommonEnemy" />
-        <module name="Asteroids" />
         <module name="Enemy" />
-        <module name="CommonAsteroids" />
         <module name="AsteroidsLibGDX" />
         <module name="CommonBullet" />
         <module name="Core" />
@@ -80,6 +76,7 @@
       <module name="OSGiLaser" target="1.8" />
       <module name="OSGiLibGDX" target="1.8" />
       <module name="PaxAteroids" target="1.8" />
+      <module name="Player" target="11" />
       <module name="player" target="9" />
       <module name="Player (1)" target="11" />
       <module name="player (1)" target="9" />
